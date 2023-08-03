@@ -21,7 +21,7 @@ body .navbar {
     line-height: 1.25;
     background-color: lightblue;
     box-shadow: 10px 10px 0px darkblue;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 body .content {
@@ -45,7 +45,6 @@ body .content {
 .navbar li {
     float: left;
 }
-
 .navbar li a {
     display: block;
     color: darkblue;
@@ -76,3 +75,24 @@ body .content {
     background-color: darkblue;
     color: aliceblue;
 }
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Minimum width of 200px, with equal distribution */
+    gap: 10px;
+    margin: 0 50px;
+  }
+  
+  .gallery img:hover {
+    filter: grayscale(100%);
+  }
+  
+  .gallery img {
+    border: none;
+    box-shadow: none;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+  }
